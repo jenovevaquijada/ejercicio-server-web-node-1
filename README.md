@@ -1,4 +1,4 @@
-# ejercicio-server-web-node-1# 🎬 Netflix Catalogue API
+# 🎬 Catálogo Netflix API
 
 Bienvenida/o a mi catálogo digital de películas y series. Este proyecto es una API REST construida con **Node.js** y **Express**, diseñada bajo los principios de programación asíncrona (non-blocking) y manejo eficiente de datos en archivos planos.
 
