@@ -36,4 +36,5 @@ Bienvenida/o a mi catálogo digital de películas y series. Este proyecto es una
 | `POST` | `/catalogo/:tipo` | Agrega un nuevo ítem al archivo correspondiente. |
 | `DELETE` | `/catalogo/:tipo/:nombre` | Elimina un registro por su nombre. |
 
-## 👩🏻‍💻 Autora: Jenoveva Quijada
+## 👩🏻‍💻 Autora
+Jenoveva Quijada
