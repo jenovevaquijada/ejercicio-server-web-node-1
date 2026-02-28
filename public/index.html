@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Catálogo Netflix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🎬 Catálogo Digital</h1>
+        <div class="main-buttons">
+            <button onclick="cargarDatos('peliculas')">LISTA DE PELÍCULAS</button>
+            <button onclick="cargarDatos('series')">LISTA DE SERIES</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="forms-container">
+            <div class="form-box">
+                <h3>+ Película</h3>
+                <input type="text" id="p-nombre" placeholder="Nombre">
+                <input type="text" id="p-director" placeholder="Director">
+                <input type="number" id="p-anio" placeholder="Año">
+                <button onclick="agregarItem('peliculas')">AGREGAR NUEVA PELÍCULA</button>
+            </div>
+            <div class="form-box">
+                <h3>+ Serie</h3>
+                <input type="text" id="s-nombre" placeholder="Nombre">
+                <input type="number" id="s-anio" placeholder="Año">
+                <input type="number" id="s-temporadas" placeholder="Temporadas">
+                <button onclick="agregarItem('series')">AGREGAR NUEVA SERIE</button>
+            </div>
+        </section>
+
+        <section id="display-section">
+            <div id="sort-controls" style="display:none;">
+                <span>Ordenar por: </span>
+                <button onclick="ordenar('nombre')">Nombre</button>
+                <button onclick="ordenar('anio')">Año</button>
+                <button id="btn-extra-sort"></button>
+            </div>
+            <ul id="lista-contenido"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
